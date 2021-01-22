@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>YouTube</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/07b0558508.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div id='header-group1'>
+
+      <img alt="Guide Icon" class='header-icon' id='guide-icon' src="images/header/three-lines.jpg">
+      <img alt='Youtube Logo' id='header-logo' src='images/header/youtube-logo.jpg'>
+    </div>
+    <div id='header-group2'>
+
+      <form>
+        <input id="search-bar" type="text", placeholder='Search'>
+      </form>
+      <button>
+        <ion-icon name="search-sharp"></ion-icon>
+      </button>
+      <img alt="" id="mic" class='header-icon' src="images/header/mic.jpg">
+    </div>
+    <div id='header-group3'>
+      <img alt="" class='header-icon' src="images/header/camera.jpg">
+      <img alt="" class='header-icon' src="images/header/nine-dots.jpg">
+      <img alt="" class='header-icon' src="images/header/bell.jpg">
+      <img alt="" class='header-icon' id='avatar' src="images/header/avatar.jpg">
+    </div>
+  </header>
+  <div id='container'>
+    
+    <section id='video'>
+      <iframe
+        src="https://www.youtube.com/embed/sdUUx5FdySs"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section id='video-footer'>
+      <div>
+        <h3>Kiwi!</h3>
+        <p>44,571,992 views • Jun 27, 2006</p>
+      </div>
+      <div id='video-controls'>
+        <p>
+          <i class="fas fa-thumbs-up"></i>
+          <span>459k</span>
+          <i class="fas fa-thumbs-down"></i>
+          <span>14k</span>
+          <span>Share</span>
+          <i class="fas fa-list"></i>
+          <span>Save</span>
+          <i class="fas fa-ellipsis-h"></i>
+        </p>
+      </div>
+    </section>
+    <section id='video-description'>
+      <img alt='' id='author-avatar' src='images/author-avatar.jpg'>
+      <div>
+
+        <h3>Madyeti47</h3>
+        <div class='aside'>21.9k subscribers</div>
+        <p>My Master's Thesis Animation, which I completed while I was at The School of Visual Arts, MFA Computer Art, in New York City.  Created using Maya, After Effects, and rigged using The Setup Machine by Anzovin studios.  If you would like to download there is a small version at my website:  </p>
+        <div class='aside'>SHOW MORE</div>
+      </div>
+      <button>SUBSCRIBE</button>
+    </section>
+  
+    <section id='comments'>
+      <span class='aside'>68,015 Comments</span>
+      <i class="fas fa-sort-amount-down"></i>
+      <span>SORT BY</span>
+      <div class='add-comment'>
+
+        <img alt="" class='comment-avatar' src="images/comment-avatar.jpg">
+        <form>
+          <input id="comment-form" type="text", placeholder='Add a public comment...'>
+        </form>
+      </div>
+      <br>
+      <div class='comment-container'>
+        <img alt='' class='comment-avatar' src='images/comment1.jpg'>
+        <div>
+          <div><strong>Pavel Elkin</strong><i>   2 months ago (edited)</i></div>
+          <p>
+            Stop crying guys, kiwi had a parachute<br>
+            He is safe and loves to "fly" once a week :,)
+          </p>
+          <div class='comment-likes'>
+            <i class="fas fa-thumbs-up"></i>
+            <span>348</span>
+            <i class="fas fa-thumbs-down"></i>
+            <span>1</span>
+            <span>REPLY</span>
+          </div>
+          <div class='comment-replies'>
+            <i class="fas fa-sort-down"></i>
+            <span>View 15 replies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class='comment-container'>
+        <img alt='' class='comment-avatar' src='images/comment2.jpg'>
+        <div>
+          <div><strong>Harold Templeton</strong><i>   6 days ago (edited)</i></div>
+          <p>Hopefully he will be a bird who can fly in his next life 🙏</p>
+          <div class='comment-likes'>
+            <i class="fas fa-thumbs-up"></i>
+            <span>6</span>
+            <i class="fas fa-thumbs-down"></i>
+            <span>1</span>
+            <span>REPLY</span>
+          </div>
+          <div class='comment-replies'>
+            <i class="fas fa-sort-down"></i>
+            <span>View 2 replies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class='comment-container'>
+        <img alt='' class='comment-avatar' src='images/comment3.jpg'>
+        <div>
+          <div><strong>Doge Dude</strong><i>   1 year ago</i></div>
+          <p>The animation is actually quite impressive for 2006 YouTube</p>
+          <div class='comment-likes'>
+            <i class="fas fa-thumbs-up"></i>
+            <span>27k</span>
+            <i class="fas fa-thumbs-down"></i>
+            <span>REPLY</span>
+          </div>
+          <div class='comment-replies'>
+            <i class="fas fa-sort-down"></i>
+            <span>View 49 replies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <aside id='sidebar'>
+      <a href='https://www.youtube.com/watch?v=UOS5CP8tzYQ'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video1.jpg'>
+          <div>
+            <div>
+              <strong>Reimagination of Disney's short film's music: "Paperman" (2012)</strong>
+            </div>
+            <div class='thumbnail-details'>Azul Sierra - Film scoring</div>
+            <div class='thumbnail-details'>1.9M views • 11 months ago</div>
+
+          </div>
+        </div>
+      </a>
+
+      <button class='thumbnail-button highlighted-button'>All</button>
+      <button class='thumbnail-button'>Related</button>
+      <button class='thumbnail-button'>Recently uploaded</button>
+
+      <a href='https://www.youtube.com/watch?v=kQjtK32mGJQ'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video2.jpg'>
+          <div>
+            <div>
+              <strong>Alike short film</strong>
+            </div>
+            <div class='thumbnail-details'>Pepe School Land</div>
+            <div class='thumbnail-details'>11M views • 4 years ago</div>
+
+          </div>
+        </div>
+      </a>
+
+      <a href='https://www.youtube.com/watch?v=38y_1EWIE9I'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video3.jpg'>
+          <div>
+            <div>
+              <strong>Snack Attack</strong>
+            </div>
+            <div class='thumbnail-details'>Eduardo Verastegui</div>
+            <div class='thumbnail-details'>29M views • 4 years ago</div>
+
+          </div>
+        </div>
+      </a>
+
+      <a href='https://www.youtube.com/watch?v=Q9G4lH6pbYI'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video4.jpg'>
+          <div>
+            <div>
+              <strong>Top 10 Best CGI Animations 🌟 Compilation 2019 🌟</strong>
+            </div>
+            <div class='thumbnail-details'>GenoegMattheo</div>
+            <div class='thumbnail-details'>1M views • 1 year ago</div>
+
+          </div>
+        </div>
+      </a>
+
+      <a href='https://www.youtube.com/watch?v=1Rkn6rnsgc4'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video5.jpg'>
+          <div>
+            <div>
+              <strong>REBOOTED | Short Film</strong>
+            </div>
+            <div class='thumbnail-details'>timtimfed</div>
+            <div class='thumbnail-details'>3M views • 9 months ago</div>
+
+          </div>
+        </div>
+      </a>
+
+      <a href='https://www.youtube.com/watch?v=vZE1pev2IWE'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video6.jpg'>
+          <div>
+            <div>
+              <strong>El Gatito | Cortometraje | Short Movie | Game Ever</strong>
+            </div>
+            <div class='thumbnail-details'>Game Ever Studio</div>
+            <div class='thumbnail-details'>2.6M views • 2 years ago</div>
+
+          </div>
+        </div>
+      </a>
+
+      <a href='https://www.youtube.com/watch?v=e9dZQelULDk'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video7.jpg'>
+          <div>
+            <div>
+              <strong>Happiness</strong>
+            </div>
+            <div class='thumbnail-details'>Steve Cutts</div>
+            <div class='thumbnail-details'>23M views • 3 years ago</div>
+
+          </div>
+        </div>
+      </a>
+
+      <a href='https://www.youtube.com/watch?v=YDXOioU_OKM'>
+        <div class='video-preview'>
+          <img alt='' class='video-thumbnail' src='images/sidebar/video8.jpg'>
+          <div>
+            <div>
+              <strong>The Maker</strong>
+            </div>
+            <div class='thumbnail-details'>Zealous Creative</div>
+            <div class='thumbnail-details'>13M views • 8 years ago</div>
+
+          </div>
+        </div>
+      </a>
+    </aside>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
