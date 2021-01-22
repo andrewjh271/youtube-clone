@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>YouTube</title>
   <link rel="stylesheet" href="main.css">
   <script src="https://kit.fontawesome.com/07b0558508.js" crossorigin="anonymous"></script>
@@ -20,11 +21,12 @@
         <input id="search-bar" type="text", placeholder='Search'>
       </form>
       <button>
-        <ion-icon name="search-sharp"></ion-icon>
+        <ion-icon name="search-sharp" class='search-icon-main'></ion-icon>
       </button>
       <img alt="" id="mic" class='header-icon' src="images/header/mic.jpg">
     </div>
     <div id='header-group3'>
+      <img alt="" class='header-icon mobile-only' src="images/header/magnifying-glass.jpg">
       <img alt="" class='header-icon' src="images/header/camera.jpg">
       <img alt="" class='header-icon' src="images/header/nine-dots.jpg">
       <img alt="" class='header-icon' src="images/header/bell.jpg">
@@ -44,7 +46,7 @@
     <section id='video-footer'>
       <div>
         <h3>Kiwi!</h3>
-        <p>44,571,992 views • Jun 27, 2006</p>
+        <p class='video-info'>44,571,992 views • Jun 27, 2006</p>
       </div>
       <div id='video-controls'>
         <p>

@@ -30,6 +30,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 6%;
   padding: 0 2vw;
   position: sticky;
@@ -38,9 +39,13 @@ header {
 }
 
 .header-icon {
-  width: 40px;
-  height: 40px;
-  margin: 5px;
+  width: 3.2vw;
+    height: 3.2vw;
+    margin: 0.7vw;
+}
+
+.search-icon-main {
+  font-size: 1.3w;
 }
 
 #guide-icon {
@@ -54,8 +59,8 @@ header {
 }
 
 #header-logo {
-  height: 40px;
-  margin: 5px;
+  height: 3.2vw;
+    margin: 0.7vw;
 }
 
 #header-group2 {
@@ -64,12 +69,12 @@ header {
 }
 
 #header-group2 button {
-  height: 33px;
+  height: 4vh;
   background-color: lightgray;
   opacity: 0.75;
   box-sizing: border-box;
   border: none;
-  width: 50px;
+  min-width: 4vw;
 }
 
 #header-group2 button:hover {
@@ -78,9 +83,9 @@ header {
 }
 
 #search-bar{
-  padding-left: 20px;
-  width: 554px;
-  height: 33px;
+  padding-left: 1vw;
+  width: 40vw;
+  height: 4vh;
   border: 1px solid #dfe1e5;
   box-sizing: border-box;
 }
@@ -110,7 +115,7 @@ header {
   background-color: lightblue;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
-  height: 600px;
+  height: 67vh;
 }
 
 #video iframe {
@@ -143,6 +148,7 @@ header {
   align-items: flex-start;
   border-bottom: 1px solid lightgray;
   padding: 1vh 0;
+  margin-bottom: 1vh;
 }
 
 #author-avatar {
@@ -270,4 +276,78 @@ header {
 .highlighted-button {
   background-color: rgb(87, 87, 87);
   color: white;
+  border: none;
+}
+
+/* Mobile design */
+
+.mobile-only {
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+  #container {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  #search-bar, #mic, .search-icon-main {
+    display: none;
+  }
+  
+  #header-group2 button {
+    height: 3vh;
+    background: none;
+  }
+
+  .header-icon {
+    width: 5.2vw;
+    height: 5.2vw;
+    margin: 0.7vw;
+  }
+
+  #header-logo {
+    height: 5.2vw;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+
+  #video {
+    height: 31vh;
+  }
+
+  #video-description {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  #video-description button {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  #video-footer {
+    align-items: center;
+  }
+
+  .video-info {
+    display: none;
+  }
+
+  .video-thumbnail {
+    width: 31vw;
+  }
+
+  #sidebar {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  #comments {
+    grid-row: 5 / 6;
+  }
 }
