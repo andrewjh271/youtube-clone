@@ -1,6 +1,6 @@
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -40,8 +40,8 @@ header {
 
 .header-icon {
   width: 3.2vw;
-    height: 3.2vw;
-    margin: 0.7vw;
+  height: 3.2vw;
+  margin: 0.7vw;
 }
 
 .search-icon-main {
@@ -60,7 +60,7 @@ header {
 
 #header-logo {
   height: 3.2vw;
-    margin: 0.7vw;
+  margin: 0.7vw;
 }
 
 #header-group2 {
@@ -82,7 +82,7 @@ header {
   opacity: 1;
 }
 
-#search-bar{
+#search-bar {
   padding-left: 1vw;
   width: 40vw;
   height: 4vh;
@@ -90,10 +90,11 @@ header {
   box-sizing: border-box;
 }
 
-#search-bar:hover{
+#search-bar:hover {
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
 }
+
 #search-bar:focus{
   outline: none;
 }
@@ -102,7 +103,6 @@ header {
 
 #container {
   display: grid;
-  grid-template-rows: 4fr auto auto auto;
   grid-template-columns: 2.3fr 1fr;
   column-gap: 2vw;
   width: 100%;
@@ -121,6 +121,7 @@ header {
 #video iframe {
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
 #video-footer {
@@ -181,6 +182,13 @@ header {
   grid-row: 4 / 5;
   grid-column: 1 / 2;
   padding: 1vh 0;
+}
+
+#comments h4 {
+  font-size: 15px;
+  margin-right: 1vw;
+  display: inline;
+  font-weight: normal;
 }
 
 #comments span {
@@ -289,7 +297,6 @@ header {
   #container {
     padding: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
   }
 
   #search-bar, #mic, .search-icon-main {
